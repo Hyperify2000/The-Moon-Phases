@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="src/main.js" type="module"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="ui-overlay">
+            <h2 class="title">THE MOON</h2>
+            <div class="options" id="toggle-animation">TOGGLE ANIMATION</div>
+            <div id="moon-phases-list" style="display: none">
+                <h3 id="phase-selected">...</h3>
+                <img src="resources/moon-phases/New Moon.jpg" alt="New Moon" id="new-moon">
+                <img src="resources/moon-phases/Waxing Crescent.jpg" alt="Waxing Crescent" id="waxing-crescent">
+                <img src="resources/moon-phases/First Quarter.jpg" alt="First Quarter" id="first-quarter">
+                <img src="resources/moon-phases/Waxing Gibbous.jpg" alt="Waxing Gibbous" id="waxing-gibbous">
+                <img src="resources/moon-phases/Full Moon.jpg" alt="Full Moon"id="full-moon">
+                <img src="resources/moon-phases/Waning Gibbous.jpg" alt="Waning Gibbous" id="waning-gibbous">
+                <img src="resources/moon-phases/Third Quarter.jpg" alt="Third Quarter" id="third-quarter">
+                <img src="resources/moon-phases/Waning Crescent.jpg" alt="Waning Crescent" id="waning-crescent">
+            </div>
+            <div class="options" id="moon-phases">PHASES</div>
+            <div id="options-list" style="display: none">
+                <div>
+                    <p id="speed">Animation Speed: </p>
+                    <input type="range" min="1.0" max="100.0" value="20.0" class="slider" id="animation-speed">
+                </div>
+            </div>
+            <div class="options" id="toggle-options">OPTIONS</div>
+        </div>
+    </div>
+    <div class="rendering-canvas"></div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+body {
+    overflow: hidden;
+    user-select: none;
+    padding: 0;
+    margin: 0;
+    background: #000000;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+}
+
+canvas {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.container .ui-overlay {
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .ui-overlay .title {
+    margin: 5% 5%;
+}
+
+.container .ui-overlay .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin: 2% 5%;
+    -webkit-transition: 0.5s;
+    user-select: none;
+    cursor: pointer;
+}
+
+.container .ui-overlay .options:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: scale(1.1) perspective(1px);
+    box-shadow: 0 0 2px #fff,
+                0 0 6px #fff,
+                0 0 11px #fff,
+                0 0 20px #fff;
+}
+
+#moon-phases-list {
+    margin-left: 3.5%;
+}
+
+#moon-phases-list img {
+    width: 20%;
+    border: 2px solid #fff;
+    margin: 1%;
+    -webkit-transition: 0.5s;
+}
+
+#moon-phases-list img:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: scale(1.1) perspective(1px);
+    box-shadow: 0 0 2px #fff,
+                0 0 6px #fff,
+                0 0 11px #fff,
+                0 0 20px #fff;
+}
+
+#moon-phases-list h3 {
+    text-align: center;
+}
+
+#options-list {
+    margin-left: 3.5%;
+}
+
+#options-list .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    margin-bottom: 5%;
+    background-color: rgba(48, 48, 48, 0.7);
+    outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#options-list div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#options-list p {
+    margin: 2%;
+}
